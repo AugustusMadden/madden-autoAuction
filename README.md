@@ -34,7 +34,7 @@
 - Make sure to populate the .env.example folder with your login information for MySQL.
   
 
-  To access the application functionality without installation, visit the site at (https://protected-headland-13908.herokuapp.com/)[https://protected-headland-13908.herokuapp.com/]
+  To access the application functionality without installation, visit the site at [https://protected-headland-13908.herokuapp.com/](https://protected-headland-13908.herokuapp.com/)
 
   ## Usage Information
   

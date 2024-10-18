@@ -43,7 +43,7 @@ router.get('/', async (req, res) => {
 
 
 
-// TODO: Create these authentication views 
+// Create these authentication views 
 router.get('/login', (req, res) => res.render('auth/login'));
 router.get('/signup', (req, res) => res.render('auth/signup'));
 

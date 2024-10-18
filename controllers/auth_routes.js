@@ -5,7 +5,7 @@ const User = require('../models/User')
 
 const router = express.Router()
 
-// TODO: Create a new user, authenticate them
+// Create a new user, authenticate them
 router.post('/signup', async (req, res) => {
   if (!req.body.username || !req.body.password) return res.redirect('/signup')
   const user = await User.create({
@@ -19,7 +19,7 @@ router.post('/signup', async (req, res) => {
   })
 })
 
-// TODO: Log in user stored in database
+// Log in user stored in database
 router.post('/login', async (req, res) => {
   const user = await User.findOne({ where: { username: req.body.username }})
 
@@ -40,7 +40,7 @@ router.post('/login', async (req, res) => {
 
 })
 
-// TODO: Log out user, destroy session
+// Log out user, destroy session
 router.delete('/logout', (req, res) => {
   console.log('hi')
   if (!req.session.user) return res.redirect('/')
